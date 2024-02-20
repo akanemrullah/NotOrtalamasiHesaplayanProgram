@@ -40,16 +40,16 @@ public class Main {
         // Kaldi/Gecti kontrolleri saglanip kullaniciya bilgi verildi.
         boolean control = false;
 
-        if(ortalama >= 60){
-            control = true;
-        }
+        control = ortalama >= 60;
 
         if (control == true){
-            System.out.println("\nGectiniz. Tebrikler");
+
+            System.out.println("\n\nTebrikler " + isimSoyisim + " Basarili!!!");
         }
-        else{
-            System.out.println("\nBasarisiz..");
+        else {
+            System.out.println("\n\nUzgunum " + isimSoyisim + " Basarisiz...");
         }
+
 
     }
 }
